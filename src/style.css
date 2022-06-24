@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Karla', sans-serif;
+}
+
+#showcase-container {
+    background: #0B2434;
+    padding: 2rem;
+    max-width: 700px;
+}
+
+#showcase {
+    padding: inherit;
+    background: #F5F5F5;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.heading {
+    font-size: 2.5rem;
+}
+
+.hint-txt {
+    max-width: 430px;
+    color: #4A4E74;
+}
+
+.roll-btn {
+    background: #5035FF;
+    border: none;
+    font-size: 1.2rem;
+    color: #F5F5F5;
+    padding: 0.5em 1.4em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dice {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.die-container {
+    width: 70px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 2rem;
+    /* padding: 0.3rem 1rem; */
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 3.81277px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: black;
+}
+.die{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.die-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.die-1 div{
+    width: 16px;
+    height: 16px;
+}
+
+.die-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    transform: rotate(-45deg);
+}
+.die-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    transform: rotate(-45deg);
+}
+
+.die-4 {
+    position: relative;
+    padding: 20px;
+}
+.die-4 div {
+    position: absolute;
+    margin: 10px;
+}
+.die-4 .dot-1, .die-5 .dot-1, .die-6 .dot-1 {
+    top: 0;
+    left: 0;
+}.die-4 .dot-2,  .die-5 .dot-2, .die-6 .dot-3 {
+    bottom: 0;
+    left: 0;
+}.die-4 .dot-3,  .die-5 .dot-4, .die-6 .dot-4 {
+    top: 0;
+    right: 0;
+}.die-4 .dot-4,  .die-5 .dot-5 , .die-6 .dot-6{
+    bottom: 0;
+    right: 0;
+}
+
+.die-5 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.die-5 div, .die-6 div {
+    position: absolute;
+    margin: 8px;
+}
+.die-6 div {
+    
+}
+
+.die-6 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.die-6 .dot-5 {
+    right: 0;
+}
+
+
+.die-1 div:nth-child(n+2){
+    display: none;
+}
+.die-2 div:nth-child(n+3){
+    display: none;
+}
+.die-3 div:nth-child(n+4){
+    display: none;
+}
+.die-4 div:nth-child(n+5){
+    display: none;
+}
+.die-5 div:nth-child(n+6){
+    display: none;
+}
+.die-6 div:nth-child(n+7){
+    display: none;
+}
+
+
+
+.game-performance {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: start;
+    background: rgba(128, 128, 128, 0.1);
+    padding: 1rem;
+}
+.game-performance p {
+    margin: 0;
+    /* padding: 0; */
+}
