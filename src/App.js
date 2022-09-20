@@ -4,12 +4,12 @@ import { nanoid } from "nanoid";
 import Confetti from "react-confetti";
 
 export default function App() {
-  const [dice, setDice] = React.useState(randomDiceGenerator());
-  const [tenzie, setTenzie] = React.useState(false);
   const [windowSize, setWindowSize] = React.useState({
     width: window.innerWidth,
     height: window.innerHeight,
   });
+  const [dice, setDice] = React.useState(randomDiceGenerator());
+  const [tenzie, setTenzie] = React.useState(false);
   const [movesCount, setMovesCount] = React.useState(0);
   const [time, setTime] = React.useState(0);
   const [isTimerActive, setIsTimerActive] = React.useState(false);
@@ -35,6 +35,9 @@ export default function App() {
   function randomDiceGenerator() {
     const diceArr = [];
     for (let i = 0; i < 10; i++) {
+      if(i == 10 - 1 && windowSize.width < 425) {
+          break;
+      }
       diceArr.push(randomDieGenerator());
     }
     return diceArr;

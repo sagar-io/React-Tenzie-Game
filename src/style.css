@@ -1,179 +1,320 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-family: 'Karla', sans-serif;
-    background: url('./images/bg-w1.jpg') no-repeat;
-    background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Karla", sans-serif;
+  background: url("./images/bg-w1.jpg") no-repeat;
+  background-size: cover;
 }
 
 #showcase-container {
-    background: #160c3a94;
-    padding: 2rem;
-    max-width: 700px;
-    box-shadow: 0 0 12px -2px black;
+  background: #160c3a94;
+  padding: 2rem;
+  max-width: 700px;
+  box-shadow: 0 0 12px -2px black;
 }
 
 #showcase {
-    padding: inherit;
-    background: #F5F5F5;
-    border-radius: 10px;
-    text-align: center;
-    position: relative;
+  padding: inherit;
+  background: #f5f5f5;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
 }
 
 .heading {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .hint-txt {
-    max-width: 430px;
-    color: #4A4E74;
+  max-width: 430px;
+  color: #4a4e74;
 }
 
 .roll-btn {
-    background: #282bf8de;
-    border: none;
-    font-size: 1.2rem;
-    color: #F5F5F5;
-    padding: 0.5em 1.4em;
-    border-radius: 5px;
-    cursor: pointer;
+  background: #282bf8de;
+  border: none;
+  font-size: 1.2rem;
+  color: #f5f5f5;
+  padding: 0.5em 1.4em;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .dice {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1.5rem;
-    margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
 }
 
 .die-container {
-    width: 70px;
-    height: 60px;
-    font-weight: 700;
-    font-size: 2rem;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
-    border-radius: 3.81277px;
-    cursor: pointer;
-    user-select: none;
+  width: 70px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 2rem;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 3.81277px;
+  cursor: pointer;
+  user-select: none;
 }
 
 .dot {
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background-color: black;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: black;
 }
-.die{
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
+.die {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
 }
 
 .die-1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.die-1 div{
-    width: 16px;
-    height: 16px;
+.die-1 div {
+  width: 16px;
+  height: 16px;
 }
 
 .die-2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    transform: rotate(-45deg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  transform: rotate(-45deg);
 }
 .die-3 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    transform: rotate(-45deg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  transform: rotate(-45deg);
 }
 
 .die-4 {
-    position: relative;
-    padding: 20px;
+  position: relative;
+  padding: 20px;
 }
 .die-4 div {
-    position: absolute;
-    margin: 10px;
+  position: absolute;
+  margin: 10px;
 }
-.die-4 .dot-1, .die-5 .dot-1, .die-6 .dot-1 {
-    top: 0;
-    left: 0;
-}.die-4 .dot-2,  .die-5 .dot-2, .die-6 .dot-3 {
-    bottom: 0;
-    left: 0;
-}.die-4 .dot-3,  .die-5 .dot-4, .die-6 .dot-4 {
-    top: 0;
-    right: 0;
-}.die-4 .dot-4,  .die-5 .dot-5 , .die-6 .dot-6{
-    bottom: 0;
-    right: 0;
+.die-4 .dot-1,
+.die-5 .dot-1,
+.die-6 .dot-1 {
+  top: 0;
+  left: 0;
+}
+.die-4 .dot-2,
+.die-5 .dot-2,
+.die-6 .dot-3 {
+  bottom: 0;
+  left: 0;
+}
+.die-4 .dot-3,
+.die-5 .dot-4,
+.die-6 .dot-4 {
+  top: 0;
+  right: 0;
+}
+.die-4 .dot-4,
+.die-5 .dot-5,
+.die-6 .dot-6 {
+  bottom: 0;
+  right: 0;
 }
 
 .die-5 {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.die-5 div, .die-6 div {
-    position: absolute;
-    margin: 8px;
+.die-5 div,
+.die-6 div {
+  position: absolute;
+  margin: 8px;
 }
 .die-6 div {
-    
 }
 
 .die-6 {
-    display: flex;
-    align-items: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .die-6 .dot-5 {
-    right: 0;
+  right: 0;
 }
 
-.die-1 div:nth-child(n+2){
-    display: none;
+.die-1 div:nth-child(n + 2) {
+  display: none;
 }
-.die-2 div:nth-child(n+3){
-    display: none;
+.die-2 div:nth-child(n + 3) {
+  display: none;
 }
-.die-3 div:nth-child(n+4){
-    display: none;
+.die-3 div:nth-child(n + 4) {
+  display: none;
 }
-.die-4 div:nth-child(n+5){
-    display: none;
+.die-4 div:nth-child(n + 5) {
+  display: none;
 }
-.die-5 div:nth-child(n+6){
-    display: none;
+.die-5 div:nth-child(n + 6) {
+  display: none;
 }
-.die-6 div:nth-child(n+7){
-    display: none;
+.die-6 div:nth-child(n + 7) {
+  display: none;
 }
 .game-performance {
-    position: absolute;
-    right: 0;
-    top: 0;
-    text-align: start;
-    background: rgba(128, 128, 128, 0.1);
-    padding: 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: start;
+  background: rgba(128, 128, 128, 0.1);
+  padding: 1rem;
 }
 .game-performance p {
-    margin: 0;
+  margin: 0;
 }
 
+@media (max-width: 768px) {
+  #showcase-container {
+    max-width: 550px;
+  }
+  .heading {
+    font-size: 2.2rem;
+  }
+  .hint-txt {
+    max-width: 390px;
+    word-spacing: 1.8px;
+    margin: auto;
+  }
+  .dice {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.2rem;
+    margin: 1.6rem 0;
+  }
+  .die-container {
+    width: 55px;
+    height: 45px;
+    font-weight: 600;
+    font-size: 1.7rem;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+  .die-1 div {
+    width: 13px;
+    height: 13px;
+  }
+  .die-2 {
+    padding: 8px;
+  }
+  .die-3 {
+    padding: 8px;
+  }
+  .die-4 div {
+    margin: 8px;
+  }
+  .die-5 div,
+  .die-6 div {
+    margin: 5px;
+  }
+  .game-performance {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 550px) {
+  #showcase-container {
+    max-width: 450px;
+    padding: 1.5rem;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .hint-txt {
+    max-width: 280px;
+    word-spacing: 1.6px;
+  }
+  .dice {
+    gap: 0.9rem;
+    margin: 1rem 0;
+  }
+  .die-container {
+    width: 45px;
+    height: 35px;
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+  .dot {
+    width: 7px;
+    height: 7px;
+  }
+  .die-1 div {
+    width: 10px;
+    height: 10px;
+  }
+  .die-3 {
+    padding: 7px;
+  }
+  .game-performance {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .roll-btn {
+    font-size: 1rem;
+    padding: 0.5em 1.8em;
+  }
+}
+
+@media (max-width: 420px) {
+  .heading {
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+  }
+  #showcase-container {
+    margin-top: -2.5rem;
+    max-width: 320px;
+  }
+  .hint-txt {
+    max-width: 390px;
+    margin: 2rem auto;
+  }
+  .dice {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4rem;
+    margin: 1.8rem 0;
+  }
+  .die-container {
+    width: 52px;
+    height: 45px;
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+  .dot {
+    width: 8.5px;
+    height: 8.5px;
+  }
+  .die-1 div {
+    width: 12px;
+    height: 12px;
+  }
+  .die-5 div,
+  .die-6 div {
+    margin: 6px;
+  }
+}
