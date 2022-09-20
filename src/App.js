@@ -1,5 +1,5 @@
-import Die from "./Die";
-import React, { StrictMode } from "react";
+import Die from "./Components/Die";
+import React from "react";
 import { nanoid } from "nanoid";
 import Confetti from "react-confetti";
 

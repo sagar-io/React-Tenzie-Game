@@ -8,12 +8,15 @@ body {
     justify-content: center;
     height: 100vh;
     font-family: 'Karla', sans-serif;
+    background: url('./images/bg-w1.jpg') no-repeat;
+    background-size: cover;
 }
 
 #showcase-container {
-    background: #0B2434;
+    background: #160c3a94;
     padding: 2rem;
     max-width: 700px;
+    box-shadow: 0 0 12px -2px black;
 }
 
 #showcase {
@@ -34,7 +37,7 @@ body {
 }
 
 .roll-btn {
-    background: #5035FF;
+    background: #282bf8de;
     border: none;
     font-size: 1.2rem;
     color: #F5F5F5;
@@ -55,7 +58,6 @@ body {
     height: 60px;
     font-weight: 700;
     font-size: 2rem;
-    /* padding: 0.3rem 1rem; */
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
     border-radius: 3.81277px;
     cursor: pointer;
@@ -145,7 +147,6 @@ body {
     right: 0;
 }
 
-
 .die-1 div:nth-child(n+2){
     display: none;
 }
@@ -164,9 +165,6 @@ body {
 .die-6 div:nth-child(n+7){
     display: none;
 }
-
-
-
 .game-performance {
     position: absolute;
     right: 0;
@@ -177,5 +175,5 @@ body {
 }
 .game-performance p {
     margin: 0;
-    /* padding: 0; */
 }
+
