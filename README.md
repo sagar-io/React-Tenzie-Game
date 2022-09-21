@@ -8,7 +8,7 @@ In the Tenzie Game, you have to roll until all dice are the same and click each 
 
 ![](./screenshots/Tenzie-Game-desktop.png)
 <p align="center">
-  <img src="./screenshots/Tenzie-Game-desktop.png" />
+  <img src="./screenshots/Tenzie-Game-mobile.png" />
 </p>
 
 ### Links
